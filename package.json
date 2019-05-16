@@ -1,0 +1,37 @@
+{
+  "name": "rcepjs-rx",
+  "version": "1.0.0",
+  "description": "RxJS packages for rcep.js",
+  "main": "./lib",
+  "license": "MIT",
+  "author": "",
+  "homepage": "https://github.com/blindproj/rcepjs-rx#readme",
+  "bugs": {
+    "url": "https://github.com/blindproj/rcepjs-rx/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/blindproj/rcepjs-rx.git"
+  },
+  "keywords": [],
+  "scripts": {
+    "build": "webpack && webpack --opts dev",
+    "build:es5": "webpack --opts es5 && webpack --opts dev:es5",
+    "prepare": "npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "rxjs": "^6.4.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.3",
+    "@babel/plugin-proposal-object-rest-spread": "^7.4.3",
+    "@babel/preset-env": "^7.4.3",
+    "babel-loader": "^8.0.5",
+    "webpack": "4.29.4",
+    "webpack-cli": "3.2.3"
+  },
+  "files": [
+    "dist"
+  ]
+}
